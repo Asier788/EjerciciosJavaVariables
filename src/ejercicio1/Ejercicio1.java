@@ -1,21 +1,29 @@
 package ejercicio1;
 
-		public class Ejercicio1 {
+import java.util.Scanner;
 
-		    public static void main(String[] args) {
+public class Ejercicio1 {
 
-		        int num = 10;
+public static void main(String[] args) {
 
-		        num = num + 77;
-		        System.out.println("Después de incrementar en 77: " + num);
+    Scanner teclado = new Scanner(System.in);
 
-		        num = num - 3;
-		        System.out.println("Después de decrementar en 3: " + num);
+    System.out.println("Introduce un numero");
+    int numero = teclado.nextInt();
 
-		        num = num * 2;
-		        System.out.println("Después de duplicar su valor: " + num);
-		    }
+    int num = 10;
 
+    num = num + 77;
+    System.out.println("Después de incrementar en 77: " + num);
 
-	}
+    num = num - 3;
+    System.out.println("Después de decrementar en 3: " + num);
+
+    num = num * 2;
+    System.out.println("Después de duplicar su valor: " + num);
+
+    teclado.close();
+}
+
+}
 
