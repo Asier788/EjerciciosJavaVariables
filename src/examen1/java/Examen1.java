@@ -7,17 +7,21 @@ public class Examen1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Scanner input = new Scanner (System.in);
+		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Introduce una cantidad de segundos:");
+		System.out.println("Introduce una cantidad de segundos :");
 		
-		int num= input.nextInt();
+		int total = input.nextInt();
 		
-		System.out.println("Son : " + num/3600);
-		
-		
-		
-		
+		if (total <0) {
+			
+			System.out.println("La cantidad no puede ser negtiva");
+		}else {
+			int horas = total /3600;
+			int minutos =(total % 3600) /60 ;
+			int segundos =total %60;
+			System.out.println(total + " segundos son : "+ horas + " horas " + minutos + " minutos y " + segundos + " segundos ");
+		}
 		
 		
 		
